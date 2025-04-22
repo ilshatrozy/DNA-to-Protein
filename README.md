@@ -1,7 +1,7 @@
 # DNA-to-Protein
 This is a simple Python script that translates a DNA sequence into a protein (amino acid sequence) using the standard genetic code. 
 
-genetic_code = {
+    genetic_code = {
     'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M',
     'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T',
     'AAC':'N', 'AAT':'N', 'AAA':'K', 'AAG':'K',
@@ -17,9 +17,9 @@ genetic_code = {
     'TCA':'S', 'TCC':'S', 'TCG':'S', 'TCT':'S',
     'TTC':'F', 'TTT':'F', 'TTA':'L', 'TTG':'L',
     'TAC':'Y', 'TAT':'Y', 'TAA':'_', 'TAG':'_', 'TGA':'_'
-}
+    }
 
-def translate_dna_to_protein(dna_sequence):
+    def translate_dna_to_protein(dna_sequence):
     dna_sequence = dna_sequence.upper().replace(" ", "").replace("\n", "")
     protein = ""
 
@@ -33,7 +33,7 @@ def translate_dna_to_protein(dna_sequence):
 
     return protein
 
-if __name__ == "__main__":
-    dna_input = input("What is your DNA sequence? ")
+    if __name__ == "__main__":
+    dna_input = input("What is your DNA sequence?: ")
     protein_output = translate_dna_to_protein(dna_input)
     print("Translate to Protein: ", protein_output)
